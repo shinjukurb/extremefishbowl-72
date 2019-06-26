@@ -7,6 +7,5 @@ RSpec.describe Role do
 
     end
 
-
   end
 end
