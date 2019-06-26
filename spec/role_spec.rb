@@ -59,6 +59,21 @@ RSpec.describe Role do
     end
   end
 
+  context ":three_card?" do
+    it do
+      cards = [
+        Card.new("heart", 1),
+        Card.new("dia", 1),
+        Card.new("spade", 1),
+        Card.new("heart", 5),
+        Card.new("dia", 12),
+      ]
+      role = Role.new(cards)
+      expect(role.three_card?).to eq true
+    end
+  end
+
+
   xcontext "one_pair is greater than no_pair" do
     it do
       pending

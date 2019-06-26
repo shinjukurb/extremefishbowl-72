@@ -18,6 +18,10 @@ class Role
     @cards.map(&:number).combination(2).select{|a,b| a == b }.length == 2
   end
 
+  def three_card?
+    @cards.map(&:number).combination(3).select{|a,b,c| a == b && b == c }.length == 1
+  end
+
   def no_pair?
     true
   end
