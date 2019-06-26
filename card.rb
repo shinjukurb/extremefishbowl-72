@@ -3,7 +3,7 @@ class Card
 
   SUITS = %w[spade heart club dia]
 
-  def initialize(suit:, number:)
+  def initialize(suit, number)
     @suit = suit
     @number = number
   end

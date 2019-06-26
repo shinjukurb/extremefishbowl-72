@@ -15,6 +15,5 @@ class Role
   end
 
   def one_pair?
-    
   end
 end
