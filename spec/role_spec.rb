@@ -1,5 +1,5 @@
 RSpec.describe Role do
-  context "" do
+  context ":one_pair" do
 
     it do
       hand = Hand.new
