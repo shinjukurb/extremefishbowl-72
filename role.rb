@@ -1,9 +1,5 @@
 require_relative "./hand.rb"
 
-class Judge
-  
-end
-
 class Role
   ROLE_NAMES = [
     :no_pair,
@@ -15,5 +11,10 @@ class Role
   end
 
   def one_pair?
+    true
+  end
+
+  def no_pair?
+    true
   end
 end
