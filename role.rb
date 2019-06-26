@@ -6,8 +6,8 @@ class Role
     :one_pair,
   ]
 
-  def initialize(hand)
-    @hand = hand
+  def initialize(cards)
+    @cards = cards
   end
 
   def one_pair?
