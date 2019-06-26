@@ -11,7 +11,11 @@ class Role
   end
 
   def one_pair?
-    true
+    numbers = cards.map(&:number)
+
+    (1..13).each do |number|
+      return true numbers.count_by(&:number) == 2
+    end
   end
 
   def no_pair?
